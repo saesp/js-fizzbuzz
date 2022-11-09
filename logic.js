@@ -12,6 +12,7 @@
 const container = document.querySelector("div.container");
 
 for (let i = 0; i < 101; i++){
+    console.log(i);
     const element = `<div class="box box-${i}">${i}</div>`;
     const element3 = `<div class="box box-${i % 3 === 0}">Fizz</div>`;
     const element5 = `<div class="box box-${i % 5 === 0}">Buzz</div>`;
@@ -19,11 +20,18 @@ for (let i = 0; i < 101; i++){
 
     if (i % 3 === 0) {
         container.innerHTML += element3;
+        const element3Sec = "Fizz";
+        console.log(element3Sec);
     } else if (i % 5 === 0) {
         container.innerHTML += element5;
+        const element5Sec = "Buzz";
+        console.log(element5Sec);
     } else if (i % 3 === 0 && i % 5 === 0) {
         container.innerHTML += element35;
+        const element35Sec = "FizzBuzz";
+        console.log(element35Sec);
     } else {
         container.innerHTML += element;
+        console.log(element);
     }
 }
