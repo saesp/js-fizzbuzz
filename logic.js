@@ -15,7 +15,7 @@ for (let i = 0; i < 101; i++){
     const element = `<div class="box box-${i}">${i}</div>`;
     const element3 = `<div class="box box-div3">Fizz</div>`;
     const element5 = `<div class="box box-div5">Buzz</div>`;
-    const element35 = `<div class="box box-div35;">FizzBuzz</div>`;
+    const element35 = `<div class="box box-div35">FizzBuzz</div>`;
 
     if (i % 3 === 0 && i % 5 === 0) {
         container.innerHTML += element35;
